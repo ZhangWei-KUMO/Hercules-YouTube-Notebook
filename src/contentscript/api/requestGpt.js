@@ -33,7 +33,7 @@ export default async function requestGpt(prompt, isStream) {
   if (isStream) {
     try {
       const completion = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo-16k-0613',
+        model: 'gpt-3.5-turbo-16k',
         messages: arr,
         stream: isStream,
         temperature: 0.5,
@@ -46,7 +46,7 @@ export default async function requestGpt(prompt, isStream) {
     }
   } else {
     const completion = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo-16k-0613',
+      model: 'gpt-3.5-turbo-16k',
       messages: arr,
       temperature: 0.5,
       max_tokens: 1000,

@@ -1,6 +1,6 @@
 {
   "name": "hercules_chrome_extension",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "TubeX:您的YouTube AI助手",
   "main": "background.js",
   "scripts": {

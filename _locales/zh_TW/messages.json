@@ -42,6 +42,6 @@
     "message": "打开ChatGPT语音"
   },
   "alert": {
-    "message":"Please click on the browser's extension icon in the top right corner and enter your OpenAI API KEY"
+    "message":"请点击右上角的TubeX图标，打开TubeX填入您的OpenAI API KEY。中国区用户可加微信15502178435，申请开通GPT账户。"
   }
 }

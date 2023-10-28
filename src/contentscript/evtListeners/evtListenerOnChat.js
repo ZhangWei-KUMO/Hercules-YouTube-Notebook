@@ -41,6 +41,7 @@ async function evtListenerOnChatInput() {
     handleData();
   });
 }
+// 打开聊天框
 async function evtListenerOnChat() {
   document.getElementById('yt_ai_header_chat').addEventListener('click', async (e) => {
     e.stopPropagation();

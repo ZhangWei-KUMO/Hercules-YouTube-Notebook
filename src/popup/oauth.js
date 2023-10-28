@@ -25,6 +25,15 @@ window.onload = function init() {
   document.getElementById('opacity').innerText = opacity;
   document.getElementById('purchase').innerText = purchase;
 
+  document.getElementById('apikey').addEventListener('input', (e) => {
+    chrome.storage.local.set({ apikey: e.target.value });
+  });
+
+  chrome.storage.local.get(['apikey'], (result) => {
+    if (result.apikey) {
+      document.getElementById('apikey').value = result.apikey;
+    }
+  });
   // let login = document.querySelector('#google-login')
   // login.addEventListener('click', function() {
   //   chrome.identity.getAuthToken({interactive: true}, function(token) {
